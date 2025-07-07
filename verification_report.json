@@ -1,0 +1,88 @@
+{
+  "total_images": 2,
+  "valid_images": 2,
+  "error_images": 0,
+  "verification_status_counts": {
+    "partial_match": 1,
+    "extra_labels": 1
+  },
+  "average_metrics": {
+    "precision": 0.5916666666666667,
+    "recall": 0.9285714285714286,
+    "f1_score": 0.7213622291021671
+  },
+  "label_statistics": {
+    "total_true_labels": 14,
+    "total_detected_labels": 22,
+    "total_correct_labels": 13,
+    "overall_precision": 0.5909090909090909,
+    "overall_recall": 0.9285714285714286
+  },
+  "threshold_used": 0.2,
+  "per_class_statistics": {
+    "knife": {
+      "total_occurrences": 2,
+      "correctly_detected": 2,
+      "missed": 0,
+      "precision_sum": 0,
+      "recall_sum": 0,
+      "recall": 1.0
+    },
+    "glass": {
+      "total_occurrences": 2,
+      "correctly_detected": 1,
+      "missed": 1,
+      "precision_sum": 0,
+      "recall_sum": 0,
+      "recall": 0.5
+    },
+    "plate": {
+      "total_occurrences": 2,
+      "correctly_detected": 2,
+      "missed": 0,
+      "precision_sum": 0,
+      "recall_sum": 0,
+      "recall": 1.0
+    },
+    "bowl": {
+      "total_occurrences": 2,
+      "correctly_detected": 2,
+      "missed": 0,
+      "precision_sum": 0,
+      "recall_sum": 0,
+      "recall": 1.0
+    },
+    "napkin": {
+      "total_occurrences": 2,
+      "correctly_detected": 2,
+      "missed": 0,
+      "precision_sum": 0,
+      "recall_sum": 0,
+      "recall": 1.0
+    },
+    "fork": {
+      "total_occurrences": 2,
+      "correctly_detected": 2,
+      "missed": 0,
+      "precision_sum": 0,
+      "recall_sum": 0,
+      "recall": 1.0
+    },
+    "dirty_plate": {
+      "total_occurrences": 1,
+      "correctly_detected": 1,
+      "missed": 0,
+      "precision_sum": 0,
+      "recall_sum": 0,
+      "recall": 1.0
+    },
+    "dirty_bowl": {
+      "total_occurrences": 1,
+      "correctly_detected": 1,
+      "missed": 0,
+      "precision_sum": 0,
+      "recall_sum": 0,
+      "recall": 1.0
+    }
+  }
+}

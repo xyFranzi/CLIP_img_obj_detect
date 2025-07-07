@@ -1,0 +1,178 @@
+[
+  {
+    "image_path": "data/Images/img__00001_.png",
+    "predicted_classes": [
+      "dirty_plate",
+      "food",
+      "plate",
+      "spoon",
+      "dirty_bowl",
+      "fork",
+      "cup",
+      "bowl",
+      "napkin",
+      "knife",
+      "glass",
+      "bottle"
+    ],
+    "all_similarities": {
+      "knife": 0.2164139300584793,
+      "glass": 0.1955849975347519,
+      "plate": 0.2472018301486969,
+      "bowl": 0.22079087793827057,
+      "napkin": 0.21659071743488312,
+      "fork": 0.23969338834285736,
+      "dirty_plate": 0.2693297564983368,
+      "dirty_bowl": 0.24461962282657623,
+      "spoon": 0.24537265300750732,
+      "cup": 0.23088501393795013,
+      "bottle": 0.18242140114307404,
+      "food": 0.26240548491477966
+    },
+    "above_threshold_classes": [
+      "knife",
+      "plate",
+      "bowl",
+      "napkin",
+      "fork",
+      "dirty_plate",
+      "dirty_bowl",
+      "spoon",
+      "cup",
+      "food"
+    ],
+    "max_confidence": 0.2693297564983368,
+    "true_labels": [
+      "knife",
+      "glass",
+      "plate",
+      "bowl",
+      "napkin",
+      "fork",
+      "dirty_plate"
+    ],
+    "detected_labels": [
+      "knife",
+      "plate",
+      "bowl",
+      "napkin",
+      "fork",
+      "dirty_plate",
+      "dirty_bowl",
+      "spoon",
+      "cup",
+      "food"
+    ],
+    "correct_labels": [
+      "dirty_plate",
+      "fork",
+      "plate",
+      "knife",
+      "bowl",
+      "napkin"
+    ],
+    "missing_labels": [
+      "glass"
+    ],
+    "extra_labels": [
+      "food",
+      "spoon",
+      "cup",
+      "dirty_bowl"
+    ],
+    "verification_status": "partial_match",
+    "precision": 0.6,
+    "recall": 0.8571428571428571,
+    "f1_score": 0.7058823529411764
+  },
+  {
+    "image_path": "data/Images/img__00002_.png",
+    "predicted_classes": [
+      "dirty_plate",
+      "dirty_bowl",
+      "plate",
+      "food",
+      "spoon",
+      "bowl",
+      "cup",
+      "fork",
+      "glass",
+      "bottle",
+      "knife",
+      "napkin"
+    ],
+    "all_similarities": {
+      "knife": 0.2243965119123459,
+      "glass": 0.2272835522890091,
+      "plate": 0.25844308733940125,
+      "bowl": 0.24406297504901886,
+      "napkin": 0.21729812026023865,
+      "fork": 0.23481768369674683,
+      "dirty_plate": 0.2998545169830322,
+      "dirty_bowl": 0.2731999456882477,
+      "spoon": 0.2532830536365509,
+      "cup": 0.23818045854568481,
+      "bottle": 0.22530852258205414,
+      "food": 0.25737470388412476
+    },
+    "above_threshold_classes": [
+      "knife",
+      "glass",
+      "plate",
+      "bowl",
+      "napkin",
+      "fork",
+      "dirty_plate",
+      "dirty_bowl",
+      "spoon",
+      "cup",
+      "bottle",
+      "food"
+    ],
+    "max_confidence": 0.2998545169830322,
+    "true_labels": [
+      "knife",
+      "glass",
+      "plate",
+      "bowl",
+      "napkin",
+      "fork",
+      "dirty_bowl"
+    ],
+    "detected_labels": [
+      "knife",
+      "glass",
+      "plate",
+      "bowl",
+      "napkin",
+      "fork",
+      "dirty_plate",
+      "dirty_bowl",
+      "spoon",
+      "cup",
+      "bottle",
+      "food"
+    ],
+    "correct_labels": [
+      "fork",
+      "glass",
+      "plate",
+      "knife",
+      "dirty_bowl",
+      "bowl",
+      "napkin"
+    ],
+    "missing_labels": [],
+    "extra_labels": [
+      "dirty_plate",
+      "spoon",
+      "cup",
+      "food",
+      "bottle"
+    ],
+    "verification_status": "extra_labels",
+    "precision": 0.5833333333333334,
+    "recall": 1.0,
+    "f1_score": 0.7368421052631579
+  }
+]
