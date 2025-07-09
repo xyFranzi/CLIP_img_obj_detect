@@ -1,3 +1,4 @@
-data/Images/
+cropped_regions/
+old/data/Images/
 clip_env/
-gen/
+data/
