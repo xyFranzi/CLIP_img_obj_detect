@@ -5,6 +5,8 @@ import clip
 from PIL import Image
 from tqdm import tqdm
 import datetime
+import csv
+from collections import defaultdict
 
 current_dir = os.getcwd()
 data_dir = os.path.join(current_dir, 'data')
@@ -71,6 +73,12 @@ for image_file in image_files:
 
     imagedirmap[image_path] = bbox_path
 
+image_summary = defaultdict(lambda: {
+    "correct": 0,
+    "total": 0,
+    "items": []
+})
+
 for img_path, bbox_path in tqdm(imagedirmap.items()):
     full_img_path = os.path.join(current_dir, img_path)
     full_bbox_path = os.path.join(current_dir, bbox_path)
@@ -116,4 +124,32 @@ for img_path, bbox_path in tqdm(imagedirmap.items()):
         }
         results.append(result)
 
+        # Update per-image summary
+        image_summary[img_path]["total"] += 1
+        if predicted_label == label:
+            image_summary[img_path]["correct"] += 1
+        image_summary[img_path]["items"].append({
+            "true_label": label,
+            "predicted_label": predicted_label,
+            "similarity": round(score, 4),
+            "match": predicted_label == label
+        })
+
         print(result)  # or store/save later
+
+output_data = {
+    "timestamp": datetime.datetime.now().isoformat(),
+    "per_image_results": image_summary,
+    "detailed_results": results
+}
+
+with open("clip_verification_output.json", "w") as f:
+    json.dump(output_data, f, indent=2)
+
+with open("clip_verification_summary.csv", "w", newline='') as csvfile:
+    writer = csv.writer(csvfile)
+    writer.writerow(["Image", "Correct", "Total", "Accuracy"])
+
+    for img_path, stats in image_summary.items():
+        accuracy = stats["correct"] / stats["total"] if stats["total"] > 0 else 0
+        writer.writerow([img_path, stats["correct"], stats["total"], f"{accuracy:.2f}"])
