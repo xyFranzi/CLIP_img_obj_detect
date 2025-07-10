@@ -49,7 +49,7 @@ AI_QUALITY_PROMPTS = {
             "a fake computer-generated fork with impossible geometry"
         ]
     },
-    "knife": {  # Fix the typo from "knive"
+    "knife": { 
         "good_examples": [
             "a realistic knife with a distinct sharp blade and separate handle",
             "a knife showing a clear blade-handle junction and proper proportions",
